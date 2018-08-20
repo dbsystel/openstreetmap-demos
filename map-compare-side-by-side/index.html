@@ -3,7 +3,7 @@
 <head>
     <meta charset=utf-8 />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
-    <title>OpenStreetMap Demos: Comparing OSM Carto with Mapbox Streets maps</title>
+    <title>OpenStreetMap Demos: Comparing OSM Carto with OSM DB Style by DB Systel maps</title>
     <script src="../assets/scripts//leaflet/v1.3.1/leaflet.js"></script>
     <script src="../assets/scripts/leaflet-side-by-side/leaflet-side-by-side.js"></script>
     <link href="../assets/css/leaflet/v1.3.1/leaflet.css" rel="stylesheet" />
@@ -32,9 +32,9 @@
 			attribution: 'Map data &#xA9; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors | Imagery OSM Carto | '
 		}).addTo(map);
 
-		var rightLayer = L.tileLayer('https://api.tiles.mapbox.com/v4/mapbox.streets/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoib3JsZXNzIiwiYSI6ImNpaXg4cGt2cTAwMGh2Mm01ZDlqYnk5N28ifQ.EDKxdytV0xTiHyI16K0zsg', {
+		var rightLayer = L.tileLayer('https://osm-prd-server.zod.comp.db.de/dbstyle/{z}/{x}/{y}.png', {
 			noWrap: true,                     
-			attribution: 'Imagery &copy; <a href="http://mapbox.com">Mapbox</a>'
+			attribution: 'Imagery DB Systel'
 		}).addTo(map)
 
 		L.control.sideBySide(leftLayer, rightLayer).addTo(map);
