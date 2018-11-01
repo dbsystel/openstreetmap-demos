@@ -59,7 +59,7 @@
 				console.log("Flying to " + feature.title + ".");
 				console.log(feature);
 				var to = [feature.lat, feature.lon];
-				popup = L.popup().setLatLng(to).setContent("<h1>Hello world</h1>").openOn(map);
+				popup = L.popup().setLatLng(to).setContent("<h1>" + feature.title + "</h1>").openOn(map);
 				map.flyTo(to);
 			}
 		};
