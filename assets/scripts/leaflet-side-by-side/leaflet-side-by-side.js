@@ -71,7 +71,7 @@ L.Control.SideBySide = L.Control.extend({
 
   includes: L.Evented.prototype || L.Mixin.Events,
 
-  addTo: function (map) {
+  addTo: function (map, rangeValue) {
     this.remove()
     this._map = map
 
@@ -83,7 +83,7 @@ L.Control.SideBySide = L.Control.extend({
     range.min = 0
     range.max = 1
     range.step = 'any'
-    range.value = 0.5
+    range.value = rangeValue || 0.5
     range.style.paddingLeft = range.style.paddingRight = this.options.padding + 'px'
     this._addEvents()
     this._updateLayers()

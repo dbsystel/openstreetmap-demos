@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+    <title>OpenStreetMap Demos: Comparing OSM Carto with OSM DB Style by DB Systel maps</title>
+    <script src="../assets/scripts/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../assets/scripts/leaflet/v1.3.1/leaflet.js"></script>
+    <script src="../assets/scripts/leaflet-side-by-side/leaflet-side-by-side.js"></script>
+    <link href="../assets/css/leaflet/v1.3.1/leaflet.css" rel="stylesheet" />
+    <style>
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	#map {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+	}
+    </style>
+</head>
+
+<body>
+	<div id="map"></div>
+
+	<script>
+		var map = L.map('map').setView([50.1097, 8.6691], 15);
+
+		var leftLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			noWrap: true,                     
+			attribution: 'Map data &#xA9; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors | Imagery OSM Carto'
+		}).addTo(map);
+
+		var rightLayer = L.tileLayer('https://osm-prd-server.zod.comp.db.de/dbstyle/{z}/{x}/{y}.png', {
+			noWrap: true,                     
+			attribution: 'Imagery DB Systel'
+		}).addTo(map)
+
+		var sideBySide = L.control.sideBySide(leftLayer, rightLayer);
+		sideBySide.addTo(map, 0.3);
+
+		var features = [];
+
+		var waitAndFlyToNext = function() {
+			window.setTimeout(flyToNext, 5000);
+		}
+		var popup;
+
+		var flyToNext = function () {
+			if (features.length >= 1) {
+				if (popup) {
+					popup.remove();
+					popup = null;
+				}
+				var currentFeatureIndex = Math.floor(Math.random() * Math.floor(features.length));
+				var feature = features[currentFeatureIndex];
+				console.log("Flying to " + feature.title + ".");
+				console.log(feature);
+				var to = [feature.lat, feature.lon];
+				popup = L.popup().setLatLng(to).setContent("<h1>Hello world</h1>").openOn(map);
+				map.flyTo(to);
+			}
+		};
+		map.on("zoomend", waitAndFlyToNext);
+
+		$.ajax({
+			url: "stations.json"
+		}).then(function(featuresJson) {
+			var featuresObject = typeof featuresJson == 'string' ? JSON.parse(featuresJson) : featuresJson;
+			features = featuresObject;
+			console.log("Loaded [" + features.length + "] stations.");
+			waitAndFlyToNext();
+		});
+	</script>
+</body>
+</html>
