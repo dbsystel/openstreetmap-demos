@@ -60,7 +60,8 @@
 				console.log(feature);
 				var to = [feature.lat, feature.lon];
 				popup = L.popup().setLatLng(to).setContent("<h1>" + feature.title + "</h1>").openOn(map);
-				map.flyTo(to);
+				var zoom = 11 + Math.floor(Math.random() * 6)
+				map.flyTo(to, zoom);
 			}
 		};
 		map.on("zoomend", waitAndFlyToNext);
