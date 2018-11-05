@@ -47,7 +47,15 @@
 		var waitAndFlyToNext = function() {
 			if (feature) {
 				var to = [feature.lat, feature.lon];
-				popup = L.popup().setLatLng(to).setContent("<h1>" + feature.title + "</h1>").openOn(map);
+				popup = L.popup()
+					.setLatLng(to)
+					.setContent(
+						"<h1>" + feature.title + "</h1><br/>" +
+						"<img width='300' src='" + feature.url + "'/><br/>"+
+						"<p>Fotograf: " + feature.name + "</p>" +
+						"<p>Lizenz: " + feature.license + "</p>"
+					)
+					.openOn(map);
 			}
 			window.setTimeout(flyToNext, 5000);
 		}
