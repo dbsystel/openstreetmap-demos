@@ -36,7 +36,7 @@
 		var rightLayer = L.tileLayer('https://osm-prd-server.zod.comp.db.de/dbstyle/{z}/{x}/{y}.png', {
 			noWrap: true,                     
 			attribution: 'Imagery DB Systel'
-		}).addTo(map)
+		}).addTo(map);
 
 		var sideBySide = L.control.sideBySide(leftLayer, rightLayer);
 		sideBySide.addTo(map, 0.3);
@@ -58,7 +58,7 @@
 					.openOn(map);
 			}
 			window.setTimeout(flyToNext, 5000);
-		}
+		};
 		
 		var popup;
 
