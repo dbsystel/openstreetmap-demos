@@ -60,7 +60,7 @@
 			}
 			// Check if the animation is enabled
             if (animate) {
-                window.setTimeout(flyToNext, 5000);
+                window.setTimeout(flyToNext, 10000);
             }
 		};
 		
@@ -78,11 +78,15 @@
 				console.log(feature);
 				var to = [feature.lat, feature.lon];
 				var zoom = 11 + Math.floor(Math.random() * 6);
-				map.flyTo(to, zoom, {
+				var easeLinearity = Math.random();
+				var targetPoint = map.project(new L.LatLng(feature.lat, feature.lon), zoom);
+				var offsetTo = map.unproject(new L.Point(targetPoint.x, targetPoint.y - 200), zoom);
+				map.flyTo(offsetTo, zoom, {
 					animate: true
 				}, {
-					duration: 10,
-					easeLinearity: 0.05
+					duration: 20,
+					easeLinearity: easeLinearity,
+					paddingTopLeft: L.point(200, 300)
 				});
 			}
 		};
