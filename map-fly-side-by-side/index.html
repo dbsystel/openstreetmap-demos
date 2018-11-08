@@ -7,7 +7,10 @@
     <script src="../assets/scripts/jquery/3.3.1/jquery.min.js"></script>
     <script src="../assets/scripts/leaflet/v1.3.1/leaflet.js"></script>
     <script src="../assets/scripts/leaflet-side-by-side/leaflet-side-by-side.js"></script>
+    <script src="../assets/scripts/font-awesome/v5.5.0/font-awesome.min.js"></script>
     <link href="../assets/css/leaflet/v1.3.1/leaflet.css" rel="stylesheet" />
+    <script src="../assets/scripts/leaflet-easy-button/v2.0.0/leaflet-easy-button.js"></script>
+    <link href="../assets/css/leaflet-easy-button/v2.0.0/leaflet-easy-button.css" rel="stylesheet" />
     <style>
 	body {
 		margin: 0;
@@ -45,6 +48,21 @@
 		var features = [];
 		var feature = null;
 
+		// Add the start/stop button to the map
+        L.easyButton( '<i class="fas fa-pause" title="Animation stoppen"></i>', function(event){
+            if (animate) {
+                animate = false;
+                // Change the button
+                event.button.innerHTML = '<i class="fas fa-play" title="Animation starten"></i>';
+            }else {
+                animate = true;
+                // Change the button
+                event.button.innerHTML = '<i class="fas fa-pause" title="Animation stoppen"></i>';
+                // Jump to the next location
+                flyToNext();
+            }
+        }).addTo(map);
+
 		var waitAndFlyToNext = function() {
 			if (feature) {
 				var to = [feature.lat, feature.lon];
@@ -58,16 +76,14 @@
 					)
 					.openOn(map);
 			}
-			// Check if the animation is enabled
-            if (animate) {
-                window.setTimeout(flyToNext, 10000);
-            }
+            window.setTimeout(flyToNext, 10000);
 		};
 		
 		var popup;
 
 		var flyToNext = function () {
-			if (features.length >= 1) {
+            // Check if train stations are available and if the animation is enabled
+            if (features.length >= 1 && animate) {
 				if (popup) {
 					popup.remove();
 					popup = null;
