@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+    <title>OpenStreetMap Demos: Comparing OSM Carto with OSM DB Style by DB Systel maps</title>
+    <script src="../assets/scripts/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../assets/scripts/leaflet/v1.3.1/leaflet.js"></script>
+    <script src="../assets/scripts/font-awesome/v5.5.0/font-awesome.min.js"></script>
+    <link href="../assets/css/leaflet/v1.3.1/leaflet.css" rel="stylesheet" />
+    <script src="../assets/scripts/leaflet-easy-button/v2.0.0/leaflet-easy-button.js"></script>
+    <link href="../assets/css/leaflet-easy-button/v2.0.0/leaflet-easy-button.css" rel="stylesheet" />
+    <style>
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	#map {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+	}
+    </style>
+</head>
+
+<body>
+	<div id="map"></div>
+
+	<script>
+        	var animate = true;
+        	var playAudio = true;
+		var map = L.map('map').setView([50.1097, 8.6691], 15);
+
+		var rightLayer = L.tileLayer(
+			'https://osm-prd-server.zod.comp.db.de/dbstyle/{z}/{x}/{y}.png',
+			{
+				noWrap: true,
+				attribution: 'Imagery DB Systel'
+			}).addTo(map);
+
+		var features = [];
+		var feature = null;
+
+		// Add the start/stop button to the map
+		L.easyButton( '<i class="fas fa-pause" title="Animation stoppen"></i>', function(event){
+			if (animate) {
+				animate = false;
+				// Change the button
+				event.button.innerHTML = '<i class="fas fa-play" title="Animation starten"></i>';
+			} else {
+				animate = true;
+				// Change the button
+				event.button.innerHTML = '<i class="fas fa-pause" title="Animation stoppen"></i>';
+				// Jump to the next location
+				flyToNext();
+			}
+		}).addTo(map);
+
+		// Add the start/stop button to the map
+		L.easyButton( '<i class="fas fa-volume-up" title="Audio eingeschaltet"></i>', function(event){
+			if (!playAudio) {
+				playAudio = true;
+				// Change the button
+				event.button.innerHTML = '<i class="fas fa-volume-up" title="Audio eingeschaltet"></i>';
+			} else {
+				playAudio = false;
+				// Change the button
+				event.button.innerHTML = '<i class="fas fa-volume-mute" title="Audio ausschaltet"></i>';
+			}
+		}).addTo(map);
+
+
+		var waitAndFlyToNext = function() {
+			if (feature) {
+				var to = [feature.lat, feature.lon];
+				popup = L.popup()
+					.setLatLng(to)
+					.setContent(
+						"<h1>" + feature.title + "</h1><br/>" +
+						"<img width='300' src='" + feature.url + "'/><br/>"+
+						"<p>Fotograf: " + feature.name + "</p>" +
+						"<p>Lizenz: " + feature.license + "</p>"
+					)
+					.openOn(map);
+				var name = feature.speak || feature.title;
+				var fileName = name
+					.replace('\u00f6', 'oe')
+					.replace('\u00fc', 'ue')
+					.replace(' ', '_');
+
+				if (playAudio) {
+					var audioUrl = "assets/audio/" + fileName + ".mp3";
+					new Audio(audioUrl).play();
+				}
+			}
+			window.setTimeout(flyToNext, 2000);
+		};
+		
+		var popup;
+
+		var flyToNext = function () {
+			// Check if train stations are available and if the animation is enabled
+			if (features.length >= 1 && animate) {
+				if (popup) {
+					popup.remove();
+					popup = null;
+				}
+				var currentFeatureIndex = Math.floor(Math.random() * Math.floor(features.length));
+				feature = features[currentFeatureIndex];
+				console.log("Flying to " + feature.title + ".");
+				console.log(feature);
+				var to = [feature.lat, feature.lon];
+				var zoom = 11 + Math.floor(Math.random() * 6);
+				var easeLinearity = Math.random();
+				var targetPoint = map.project(new L.LatLng(feature.lat, feature.lon), zoom);
+				var offsetTo = map.unproject(new L.Point(targetPoint.x, targetPoint.y - 200), zoom);
+				map.flyTo(offsetTo, zoom, {
+					animate: true
+				}, {
+					duration: 20,
+					easeLinearity: easeLinearity,
+					paddingTopLeft: L.point(200, 300)
+				});
+			}
+		};
+		map.on("zoomend", waitAndFlyToNext);
+
+		$.ajax({
+			url: "assets/data/stations.json"
+		}).then(function(featuresJson) {
+			var featuresObject = typeof featuresJson == 'string' ? JSON.parse(featuresJson) : featuresJson;
+			features = featuresObject;
+			console.log("Loaded [" + features.length + "] stations.");
+			waitAndFlyToNext();
+		});
+	</script>
+</body>
+</html>

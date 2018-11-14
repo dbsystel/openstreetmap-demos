@@ -1,0 +1,452 @@
+[
+  {
+    "title": "Heidelberg Hbf",
+    "speak": "Heidelberg",
+    "lat": "49.4034631947067",
+    "lon": "8.67537133155333",
+    "license": "CC BY-SA 4.0",
+    "name": "@SaxoTom",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/2628_1.jpg"
+  },
+  {
+    "title": "Stuttgart Hbf",
+    "speak": "Stuttgart",
+    "lat": "48.785519587971",
+    "lon": "9.18341159820557",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "@LarsiW",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/6071_1.jpg"
+  },
+  {
+    "title": "Mannheim Hbf",
+    "speak": "Mannheim",
+    "lat": "49.4790921866184",
+    "lon": "8.46960067749023",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "@mibi61",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/3925_1.jpg"
+  },
+  {
+    "title": "Fulda",
+    "speak": "Fulda",
+    "lat": "50.5547372607544",
+    "lon": "9.6843855869764",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "@storchp",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/1973.jpg"
+  },
+  {
+    "title": "Erfurt Hbf",
+    "speak": "Erfurt",
+    "lat": "50.9722198499415",
+    "lon": "11.0382270812988",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "@pihalbe",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/1634_1.jpg"
+  },
+  {
+    "title": "Berlin Hauptbahnhof",
+    "speak": "Berlin",
+    "lat": "52.5249931670462",
+    "lon": "13.3696973323822",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "Anonym",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/1071_0.jpg"
+  },
+  {
+    "title": "Aachen Hbf",
+    "speak": "Aachen",
+    "lat": "50.7677122357041",
+    "lon": "6.09119653701783",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "@Renaade",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/1_1.jpg"
+  },
+  {
+    "title": "Karlsruhe Hbf",
+    "speak": "Karlsruhe",
+    "lat": "48.9936117246209",
+    "lon": "8.40202510356903",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "@pihalbe",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/3107_1.jpg"
+  },
+  {
+    "title": "Hannover Hbf",
+    "speak": "Hannover",
+    "lat": "52.3769863628657",
+    "lon": "9.74193298514034",
+    "license": "CC BY-SA 4.0",
+    "name": "Sven Henze",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/2545.jpg"
+  },
+  {
+    "title": "Hamburg Hbf",
+    "speak": "Hamburg",
+    "lat": "53.5526795467633",
+    "lon": "10.006972665682",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "Sandra Becker",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/2514.jpg"
+  },
+  {
+    "title": "Bremen Hbf",
+    "speak": "Bremen",
+    "lat": "53.0832803088107",
+    "lon": "8.8137924671173",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "@okonow",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/855_1.jpg"
+  },
+  {
+    "title": "K\u00f6ln Hbf",
+    "speak": "K\u00f6ln",
+    "lat": "50.9431402240712",
+    "lon": "6.95870787226804",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "@ceterasweb",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/3320_1.jpg"
+  },
+  {
+    "title": "D\u00fcsseldorf Hbf",
+    "speak": "D\u00fcsseldorf",
+    "lat": "51.2196529016763",
+    "lon": "6.79432511329651",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "Nimue47",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/1401_1.jpg"
+  },
+  {
+    "title": "Kiel Hbf",
+    "speak": "Kiel",
+    "lat": "54.3138684429718",
+    "lon": "10.1312506198883",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "Horst Sievert",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/3174.jpg"
+  },
+  {
+    "title": "M\u00fcnster (Westf) Hbf",
+    "speak": "M\u00fcnster",
+    "lat": "51.9564828542794",
+    "lon": "7.63576794503023",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "Nimue47",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/4280.jpg"
+  },
+  {
+    "title": "Dortmund Hbf",
+    "title": "Dortmund",
+    "lat": "51.5178812814922",
+    "lon": "7.45917591339643",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "@Renaade",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/1289_1.jpg"
+  },
+  {
+    "title": "M\u00fcnchen Hbf",
+    "speak": "M\u00fcnchen",
+    "lat": "48.1408047271436",
+    "lon": "11.5553426742554",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "Esther Debus-Gregor",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/4234.jpg"
+  },
+  {
+    "title": "Augsburg Hbf",
+    "speak": "Augsburg",
+    "lat": "48.3654152780661",
+    "lon": "10.885697059093",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "Sandra Becker",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/220_2.jpg"
+  },
+  {
+    "title": "Ulm Hbf",
+    "speak": "Ulm",
+    "lat": "48.3995694891886",
+    "lon": "9.98281717300415",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "Sandra Becker",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/6323_1.jpg"
+  },
+  {
+    "title": "Offenburg",
+    "speak": "Offenburg",
+    "lat": "48.4764776172057",
+    "lon": "7.94597625732422",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "@khgdrn",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/4745_1.jpg"
+  },
+  {
+    "title": "Freiburg (Breisgau) Hbf",
+    "speak": "Freiburg",
+    "lat": "47.9977058251142",
+    "lon": "7.84139335155488",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "@khgdrn",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/1893_1.jpg"
+  },
+  {
+    "title": "N\u00fcrnberg Hbf",
+    "speak": "N\u00fcrnberg",
+    "lat": "49.4451363855203",
+    "lon": "11.0823232838665",
+    "license": "CC BY-SA 4.0",
+    "name": "@nele_we",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/4593_1.jpg"
+  },
+  {
+    "title": "W\u00fcrzburg Hbf",
+    "speak": "W\u00fcrzburg",
+    "lat": "49.8021673127213",
+    "lon": "9.93621021509171",
+    "license": "CC BY-SA 4.0",
+    "name": "Sven Henze",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/6945.jpg"
+  },
+  {
+    "title": "Frankfurt (Main) Hbf",
+    "speak": "Frankfurt",
+    "lat": "50.1065840626391",
+    "lon": "8.66248369216919",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "Blickwinkel",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/1866.jpg"
+  },
+  {
+    "title": "Bonn Hbf",
+    "speak": "Bonn",
+    "lat": "50.7320469868606",
+    "lon": "7.09673112578458",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "Anonym",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/767_1.jpg"
+  },
+  {
+    "title": "Bad Homburg",
+    "speak": "Bad Homburg",
+    "lat": "50.2200638336167",
+    "lon": "8.62117409403007",
+    "license": "CC BY-SA 4.0",
+    "name": "Christian Nielebock",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/284.jpg"
+  },
+  {
+    "title": "Saarbr\u00fccken Hbf",
+    "speak": "Saarbr\u00fccken",
+    "lat": "49.2411977403192",
+    "lon": "6.99096322059631",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "@sebaso",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/5451.jpg"
+  },
+  {
+    "title": "Duisburg Hbf",
+    "speak": "Duisburg",
+    "lat": "51.4295700715262",
+    "lon": "6.77605869635096",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "@Dgerkrath",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/1374.jpg"
+  },
+  {
+    "title": "Halle (Saale) Hbf",
+    "speak": "Halle",
+    "lat": "51.4773257549967",
+    "lon": "11.9874651145983",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "@LarsiW",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/2498_1.jpg"
+  },
+  {
+    "title": "Leipzig Hbf",
+    "speak": "Leipzig",
+    "lat": "51.3464563312927",
+    "lon": "12.3831367492676",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "Anonym",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/3631_1.jpg"
+  },
+  {
+    "title": "Dresden Hbf",
+    "speak": "Dresden",
+    "lat": "51.0402249310907",
+    "lon": "13.7320464216502",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "@khgdrn",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/1343_1.jpg"
+  },
+  {
+    "title": "Wuppertal Hbf",
+    "speak": "Wuppertal",
+    "lat": "51.2543117840239",
+    "lon": "7.14955216104334",
+    "license": "CC BY-SA 4.0",
+    "name": "@SaxoTom",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/6914.jpg"
+  },
+  {
+    "title": "Hamm (Westf)",
+    "speak": "Hamm",
+    "lat": "51.6785163278621",
+    "lon": "7.80771732330322",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "Anonym",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/2528.jpg"
+  },
+  {
+    "title": "Mainz Hbf",
+    "speak": "Mainz",
+    "lat": "50.0012846247845",
+    "lon": "8.25858592987061",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "Blickwinkel",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/3898.jpg"
+  },
+  {
+    "title": "Kassel-Wilhelmsh\u00f6he",
+    "speak": "Kassel-Wilhelmsh\u00f6he",
+    "lat": "51.3113815343054",
+    "lon": "9.44769859313964",
+    "license": "CC BY-SA 4.0",
+    "name": "@JanMaCaputo",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/3127_1.jpg"
+  },
+  {
+    "title": "Hanau Hbf",
+    "speak": "Hanau",
+    "lat": "50.1209633232863",
+    "lon": "8.92918109893799",
+    "license": "CC BY-SA 4.0",
+    "name": "@JanMaCaputo",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/2537_2.jpg"
+  },
+  {
+    "title": "Baden-Baden",
+    "speak": "Baden-Baden",
+    "lat": "48.7904297748852",
+    "lon": "8.19110271723373",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "Anonym",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/371_1.jpg"
+  },
+  {
+    "title": "Wolfsburg Hbf",
+    "speak": "Wolfsburg",
+    "lat": "52.429361138582",
+    "lon": "10.7870779037475",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "Anonym",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/6859_0.jpg"
+  },
+  {
+    "title": "Essen Hbf",
+    "speak": "Essen",
+    "lat": "51.4515032182716",
+    "lon": "7.01438204194959",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "@Dgerkrath",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/1690_1.jpg"
+  },
+  {
+    "title": "Rostock Hbf",
+    "speak": "Rostock",
+    "lat": "54.0782165975703",
+    "lon": "12.1307914597648",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "@tomcat_icke",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/5365_1.jpg"
+  },
+  {
+    "title": "Stralsund Hbf",
+    "speak": "Stralsund",
+    "lat": "54.3078995731008",
+    "lon": "13.0783867835998",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "ubahnverleih",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/6049_1.jpg"
+  },
+  {
+    "title": "Bitterfeld",
+    "speak": "Bitterfeld",
+    "lat": "51.6225406382936",
+    "lon": "12.3167542089899",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "Anonym",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/680_1.jpg"
+  },
+  {
+    "title": "Jena Paradies",
+    "speak": "Jena",
+    "lat": "50.9249325277131",
+    "lon": "11.5876579284668",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "@JoachimWeiss",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/3043_1.jpg"
+  },
+  {
+    "title": "Passau Hbf",
+    "speak": "Passau",
+    "lat": "48.5736767696529",
+    "lon": "13.4504671409978",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "SimoneDoerfling",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/4872.jpg"
+  },
+  {
+    "title": "Freilassing",
+    "speak": "Freilassing",
+    "lat": "47.8368366058781",
+    "lon": "12.9766952991486",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "@N1tr0glyc3r1n",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/1906.jpg"
+  },
+  {
+    "title": "Oldenburg (Oldb) Hbf",
+    "speak": "Oldenburg",
+    "lat": "53.1439704744629",
+    "lon": "8.22262417018804",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "@khgdrn",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/4765.jpg"
+  },
+  {
+    "title": "Oberhausen Hbf",
+    "speak": "Oberhausen",
+    "lat": "51.4748745675872",
+    "lon": "6.8516492843628",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "@Dgerkrath",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/4648_1.jpg"
+  },
+  {
+    "title": "Osnabr\u00fcck Hbf",
+    "speak": "Osnabr\u00fcck",
+    "lat": "52.2728044786013",
+    "lon": "8.0616530704211",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "@khgdrn",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/4787_1.jpg"
+  },
+  {
+    "title": "Koblenz Hbf",
+    "speak": "Koblenz",
+    "lat": "50.3504839740712",
+    "lon": "7.5883643945357",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "@khgdrn",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/3299_1.jpg"
+  },
+  {
+    "title": "Kaiserslautern Hbf",
+    "speak": "Kaiserslautern",
+    "lat": "49.4359302470151",
+    "lon": "7.76889860630035",
+    "license": "CC0 1.0 Universell (CC0 1.0)",
+    "name": "@irgendlink",
+    "url": "https:\/\/fotos.railway-stations.org\/fotos\/de\/3082.jpg"
+  }
+]
