@@ -6,6 +6,7 @@
     <title>OpenStreetMap Demos: Comparing OSM Carto with OSM DB Style by DB Systel maps</title>
     <script src="../assets/scripts/jquery/3.3.1/jquery.min.js"></script>
     <script src="../assets/scripts/leaflet/v1.3.1/leaflet.js"></script>
+    <script src="../assets/scripts/leaflet-side-by-side/leaflet-side-by-side.js"></script>
     <script src="../assets/scripts/font-awesome/v5.5.0/font-awesome.min.js"></script>
     <link href="../assets/css/leaflet/v1.3.1/leaflet.css" rel="stylesheet" />
     <script src="../assets/scripts/leaflet-easy-button/v2.0.0/leaflet-easy-button.js"></script>
@@ -29,8 +30,13 @@
 
 	<script>
         	var animate = true;
-        	var playAudio = true;
+        	var playAudio = false;
 		var map = L.map('map').setView([50.1097, 8.6691], 15);
+
+		var leftLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			noWrap: true,                     
+			attribution: 'Map data &#xA9; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors | Imagery OSM Carto'
+		}).addTo(map);
 
 		var rightLayer = L.tileLayer(
 			'https://osm-prd-server.zod.comp.db.de/dbstyle/{z}/{x}/{y}.png',
@@ -38,6 +44,9 @@
 				noWrap: true,
 				attribution: 'Imagery DB Systel'
 			}).addTo(map);
+
+		var sideBySide = L.control.sideBySide(leftLayer, rightLayer);
+		sideBySide.addTo(map, 0.3);
 
 		var features = [];
 		var feature = null;
@@ -58,7 +67,7 @@
 		}).addTo(map);
 
 		// Add the start/stop button to the map
-		L.easyButton( '<i class="fas fa-volume-up" title="Audio eingeschaltet"></i>', function(event){
+		L.easyButton( '<i class="fas fa-volume-mute" title="Audio ausgeschaltet"></i>', function(event){
 			if (!playAudio) {
 				playAudio = true;
 				// Change the button
