@@ -37,13 +37,20 @@
     .db-osm{
         right: 25%;
     }
+    .center{
+        width: 100%;
+        text-align: center;
+    }
     </style>
 </head>
 
 <body>
     <div id="map"></div>
-    <div class="headline-container osm-standard leaflet-control leaflet-container">OSM Standard</div>
-    <div class="headline-container db-osm leaflet-control leaflet-container">OSM@BusinessHub</div>
+    <div class="headline-container osm-standard leaflet-control leaflet-container">
+        <div class="center">OpenStreetMap</div>
+        <div class="center">Standard</div>
+    </div>
+    <div class="headline-container db-osm leaflet-control leaflet-container">Unsere Karte</div>
 
 	<script>
         	var animate = true;
