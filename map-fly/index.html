@@ -22,11 +22,28 @@
 		bottom: 0;
 		width: 100%;
 	}
+    .headline-container{
+        position: absolute;
+        top: 25px;
+        font-size: 24px;
+        font-weight: bold;
+        background: rgba(255,255,255,0.8);
+        padding: 5px;
+        border: black 1px dashed;
+    }
+    .osm-standard {
+        left: 10%;
+    }
+    .db-osm{
+        right: 25%;
+    }
     </style>
 </head>
 
 <body>
-	<div id="map"></div>
+    <div id="map"></div>
+    <div class="headline-container osm-standard leaflet-control leaflet-container">OSM Standard</div>
+    <div class="headline-container db-osm leaflet-control leaflet-container">OSM@BusinessHub</div>
 
 	<script>
         	var animate = true;
@@ -78,7 +95,6 @@
 				event.button.innerHTML = '<i class="fas fa-volume-mute" title="Audio ausschaltet"></i>';
 			}
 		}).addTo(map);
-
 
 		var waitAndFlyToNext = function() {
 			if (feature) {
